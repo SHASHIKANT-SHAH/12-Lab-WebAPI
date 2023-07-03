@@ -1,0 +1,12 @@
+F:\Code\Weekend\WebAPIDBOperations\DAL\bin\Debug\net6.0\DAL.deps.json
+F:\Code\Weekend\WebAPIDBOperations\DAL\bin\Debug\net6.0\DAL.dll
+F:\Code\Weekend\WebAPIDBOperations\DAL\bin\Debug\net6.0\DAL.pdb
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.dll
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\refint\DAL.dll
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\DAL.pdb
+F:\Code\Weekend\WebAPIDBOperations\DAL\obj\Debug\net6.0\ref\DAL.dll
