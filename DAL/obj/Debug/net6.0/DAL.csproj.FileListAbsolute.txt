@@ -22,3 +22,15 @@ D:\GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.dll
 D:\GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\refint\DAL.dll
 D:\GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.pdb
 D:\GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\ref\DAL.dll
+D:\0-GitClones\12-Lab-WebAPI\DAL\bin\Debug\net6.0\DAL.deps.json
+D:\0-GitClones\12-Lab-WebAPI\DAL\bin\Debug\net6.0\DAL.dll
+D:\0-GitClones\12-Lab-WebAPI\DAL\bin\Debug\net6.0\DAL.pdb
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.dll
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\refint\DAL.dll
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\DAL.pdb
+D:\0-GitClones\12-Lab-WebAPI\DAL\obj\Debug\net6.0\ref\DAL.dll

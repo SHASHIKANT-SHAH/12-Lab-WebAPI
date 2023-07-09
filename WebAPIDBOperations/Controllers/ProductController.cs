@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace WebAPIDBOperations.Controllers
 {
@@ -79,6 +80,8 @@ namespace WebAPIDBOperations.Controllers
 
         //PUT: api/product/update/{id}
         [HttpPut("{id}")]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
         public IActionResult Update(int id, Product model)
         {
             try
@@ -98,6 +101,8 @@ namespace WebAPIDBOperations.Controllers
 
         //DELETE: api/product/delete
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(string), StatusCodes.Status500InternalServerError)]
         public IActionResult Delete(int id)
         {
             try

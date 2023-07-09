@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3OpcUMzuNdE0YvFmL4xjg2vQSjSt8Ayz7MC6mM/GbH1NrYfU1HT+XfyeJD1ePl+b4/Clvf8+3MvtD87u/EyJrw==",
+  "dgSpecHash": "j1JSfjpjcPV0DuOwbCPCV/cg0vTi7AOAUjFKV2fUkrPNG6ZG5nO/DHNY4gD2DQnrEDJiaI9CdWkaoFN4Qmx5QA==",
   "success": true,
-  "projectFilePath": "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
+  "projectFilePath": "D:\\0-GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shash\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
