@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\WebAPIDBOperations\\WebAPIDBOperations.csproj": {}
+    "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\DAL.csproj": {
+    "D:\\GitClones\\12-Lab-WebAPI\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\GitClones\\12-Lab-WebAPI\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\DAL.csproj",
+        "projectPath": "D:\\GitClones\\12-Lab-WebAPI\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\shash\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\obj\\",
+        "outputPath": "D:\\GitClones\\12-Lab-WebAPI\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,7 +47,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[7.0.8, )"
             }
           },
           "imports": [
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\WebAPIDBOperations\\WebAPIDBOperations.csproj": {
+    "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
+        "projectUniqueName": "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
         "projectName": "WebAPIDBOperations",
-        "projectPath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
+        "projectPath": "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
         "packagesPath": "C:\\Users\\shash\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\WebAPIDBOperations\\obj\\",
+        "outputPath": "D:\\GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\WebApi\\WebAPIDBOperations\\DAL\\DAL.csproj"
+              "D:\\GitClones\\12-Lab-WebAPI\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\GitClones\\12-Lab-WebAPI\\DAL\\DAL.csproj"
               }
             }
           }

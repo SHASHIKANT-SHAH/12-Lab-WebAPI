@@ -2,6 +2,9 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Entities
 {
@@ -12,9 +15,14 @@ namespace DAL.Entities
             Products = new HashSet<Product>();
         }
 
+        [Key]
         public int CategoryId { get; set; }
+        [Required]
+        [StringLength(50)]
+        [Unicode(false)]
         public string Name { get; set; }
 
+        [InverseProperty("Category")]
         public virtual ICollection<Product> Products { get; set; }
     }
 }

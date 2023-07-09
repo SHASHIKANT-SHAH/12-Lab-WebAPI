@@ -12,6 +12,9 @@ namespace DAL
 {
     public partial interface IAppDbContextProcedures
     {
+        Task<int> AddNewProductDetailsAsync(string Name, string Description, decimal? UnitPrice, int? CategoryId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> DeleteProductByIdAsync(int? ProductId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> UpdateProductDetailsAsync(int? ProductId, string Name, string Description, decimal? UnitPrice, int? CategoryId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<usp_getproductResult>> usp_getproductAsync(int? ProductId, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }
