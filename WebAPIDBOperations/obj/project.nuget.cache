@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j1JSfjpjcPV0DuOwbCPCV/cg0vTi7AOAUjFKV2fUkrPNG6ZG5nO/DHNY4gD2DQnrEDJiaI9CdWkaoFN4Qmx5QA==",
+  "dgSpecHash": "LfMcNpzgtSF6WbE2ku622O6+7UlW5ruM+Vc9rCQskenu0+UDiZpISbzAd1AkQeXBznY29VrMt8E1K1UxX+Y7wA==",
   "success": true,
-  "projectFilePath": "D:\\0-GitClones\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
+  "projectFilePath": "C:\\Users\\shash\\OneDrive\\Desktop\\Projects\\DockerApp\\12-Lab-WebAPI\\WebAPIDBOperations\\WebAPIDBOperations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shash\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -37,6 +37,7 @@
     "C:\\Users\\shash\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\shash\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\shash\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

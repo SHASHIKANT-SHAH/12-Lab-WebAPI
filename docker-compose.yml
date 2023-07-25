@@ -1,0 +1,33 @@
+version: '3.4'
+
+networks:
+  apitestnetwork:
+
+services:
+  dboperationapp:
+     container_name: db-operation-app
+     image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+     ports:
+       - 5061:1433
+     environment:
+       - ACCEPT_EULA=Y
+       - MSSQL_SA_PASSWORD=yourStrong(!)Password
+     networks:
+       - apitestnetwork
+  webapidboperations:
+    container_name: web-api-app
+    image: ${DOCKER_REGISTRY-}webapidboperations
+    build:
+      context: .
+      dockerfile: WebAPIDBOperations/Dockerfile
+    ports:
+       - 8750:80
+       - 8443:443
+    depends_on:
+       - dboperationapp
+    environment:
+       - DB_HOST=dboperationapp
+       - DB_NAME=apidbname
+       - DB_SA_PASSWORD=yourStrong(!)Password
+    networks:
+       - apitestnetwork
