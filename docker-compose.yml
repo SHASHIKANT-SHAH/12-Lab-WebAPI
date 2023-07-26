@@ -1,7 +1,11 @@
 version: '3.4'
 
 networks:
-  apitestnetwork:
+  api_network:
+   driver: bridge
+
+  #web_network:
+  # driver: bridge
 
 services:
   dboperationapp:
@@ -13,10 +17,11 @@ services:
        - ACCEPT_EULA=Y
        - MSSQL_SA_PASSWORD=yourStrong(!)Password
      networks:
-       - apitestnetwork
+       - api_network
+
   webapidboperations:
     container_name: web-api-app
-    image: ${DOCKER_REGISTRY-}webapidboperations
+    image: shashikantshah951/webapidboperations:v1.0
     build:
       context: .
       dockerfile: WebAPIDBOperations/Dockerfile
@@ -30,4 +35,19 @@ services:
        - DB_NAME=apidbname
        - DB_SA_PASSWORD=yourStrong(!)Password
     networks:
-       - apitestnetwork
+       - api_network
+
+  #webapp:
+  #  container_name: web-app
+  #  image: ${DOCKER_REGISTRY-}webapp:v1.0
+  #  build:
+  #    context: .
+  #    dockerfile: WebApp/Dockerfile
+  #  ports:
+  #     - 7050:80
+  #     - 7043:443
+  #  depends_on:
+  #     - webapidboperations
+  #  networks:
+  #     - web_network
+
