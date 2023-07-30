@@ -1,0 +1,101 @@
+name: dockercompose12562366299567387186
+services:
+  dboperationapp:
+    container_name: db-operation-app
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: yourStrong(!)Password
+    image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+    networks:
+      api_network: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "5061"
+      protocol: tcp
+  webapidboperations:
+    build:
+      context: C:\Users\shash\OneDrive\Desktop\Projects\DockerApp\12-Lab-WebAPI
+      dockerfile: WebAPIDBOperations/Dockerfile
+    depends_on:
+      dboperationapp:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: dboperationapp
+      DB_NAME: apidbname
+      DB_SA_PASSWORD: yourStrong(!)Password
+    image: shashikantshah951/webapidboperations
+    networks:
+      api_network: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8750"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "8443"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\shash\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\shash\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  webapp:
+    build:
+      context: C:\Users\shash\OneDrive\Desktop\Projects\DockerApp\12-Lab-WebAPI
+      dockerfile: WebApp/Dockerfile
+    depends_on:
+      webapidboperations:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+      WebAppUrl: https://webapidboperations:8443
+    image: shashikantshah951/webapp
+    networks:
+      api_network: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "7050"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\shash\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\shash\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  api_network:
+    name: dockercompose12562366299567387186_api_network
+    driver: bridge

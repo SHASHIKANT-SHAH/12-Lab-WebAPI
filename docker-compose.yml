@@ -3,9 +3,7 @@ version: '3.4'
 networks:
   api_network:
    driver: bridge
-
-  #web_network:
-  # driver: bridge
+   
 
 services:
   dboperationapp:
@@ -19,9 +17,23 @@ services:
      networks:
        - api_network
 
+  webapp:
+    image: shashikantshah951/webapp
+    build:
+      context: .
+      dockerfile: WebApp/Dockerfile
+    ports:
+       - 7050:80
+       - 7043:443
+    depends_on:
+       - webapidboperations
+    environment:
+       - WebAppUrl=https://localhost:8443
+    networks:
+       - api_network
+
   webapidboperations:
-    container_name: web-api-app
-    image: shashikantshah951/webapidboperations:v1.0
+    image: shashikantshah951/webapidboperations
     build:
       context: .
       dockerfile: WebAPIDBOperations/Dockerfile
@@ -36,18 +48,4 @@ services:
        - DB_SA_PASSWORD=yourStrong(!)Password
     networks:
        - api_network
-
-  #webapp:
-  #  container_name: web-app
-  #  image: ${DOCKER_REGISTRY-}webapp:v1.0
-  #  build:
-  #    context: .
-  #    dockerfile: WebApp/Dockerfile
-  #  ports:
-  #     - 7050:80
-  #     - 7043:443
-  #  depends_on:
-  #     - webapidboperations
-  #  networks:
-  #     - web_network
 

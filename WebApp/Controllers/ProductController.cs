@@ -14,6 +14,7 @@ namespace WebApp.Controllers
             _config = config;
             client = new HttpClient();
             var uri = new Uri(_config["ApiAddress"]);
+            //var uri = new Uri(Environment.GetEnvironmentVariable("WebAppUrl"));
             client.BaseAddress = uri;
         }
 
