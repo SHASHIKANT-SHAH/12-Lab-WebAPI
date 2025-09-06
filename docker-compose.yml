@@ -28,7 +28,7 @@ services:
     depends_on:
        - webapidboperations
     environment:
-       - WebAppUrl=https://localhost:8443
+       - WebAppUrl=https://webapidboperations:443
     networks:
        - api_network
 

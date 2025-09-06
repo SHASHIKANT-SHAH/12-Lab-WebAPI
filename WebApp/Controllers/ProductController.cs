@@ -11,8 +11,13 @@ namespace WebApp.Controllers
         HttpClient client;
         public ProductController(IConfiguration config)
         {
-            _config = config;
-            client = new HttpClient();
+            _config = config; 
+            var handler = new HttpClientHandler
+            {
+                // 🚨 Accept all certificates (only safe for DEV)
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            };
+            client = new HttpClient(handler);
             var uri = new Uri(_config["ApiAddress"]);
             //var uri = new Uri(Environment.GetEnvironmentVariable("WebAppUrl"));
             client.BaseAddress = uri;
