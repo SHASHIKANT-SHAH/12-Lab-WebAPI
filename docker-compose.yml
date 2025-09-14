@@ -4,16 +4,20 @@ networks:
   api_network:
    driver: bridge
    
+volumes:
+  sqlserver_data:
 
 services:
   dboperationapp:
      container_name: db-operation-app
-     image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+     image: mcr.microsoft.com/mssql/server:2022-latest
      ports:
        - 5061:1433
      environment:
        - ACCEPT_EULA=Y
        - MSSQL_SA_PASSWORD=yourStrong(!)Password
+     volumes:
+      - sqlserver_data:/var/opt/mssql
      networks:
        - api_network
 
